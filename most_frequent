@@ -1,0 +1,17 @@
+def most_frequent(string):
+    x = dict()
+    for i in string:
+        if i not in x:
+            x[i] = 1
+        else:
+            x[i] += 1
+    return x
+    for t in sorted(x.items(), key=lambda x: x[1], reverse=True):
+        print(t[0],":",t[1])
+string = input("enter the string: ")
+print (most_frequent(string))
+
+Output : i = 04
+         s = 04
+         p = 02
+         m = 01
